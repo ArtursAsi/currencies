@@ -20,6 +20,7 @@
         <th scope="col">#</th>
         <th scope="col">Name</th>
         <th scope="col">Value</th>
+        <th scope="col">Date</th>
     </tr>
     </thead>
     @forelse($currencies as $currency)
@@ -30,6 +31,7 @@
             <td><a href="{{route('show',$currency)}}">
                     {{$currency->name}}</a></td>
             <td>{{$currency->value}}</td>
+            <td>{{$currency->date}}</td>
 
         </tr>
 
